@@ -1,0 +1,20 @@
+'''
+Created January 1, 2019
+@author: Alex462
+'''
+
+userPlays = raw_input('Do you want to play a game? y/n? ')
+
+if userPlays == 'n':
+	print 'Human forfeits. Computer wins by default.'
+	exit
+	
+if userPlays == 'y':
+	print 'ORIGAMI FORTUNE TELLER GAME\nPicture a four-sided paper fortune teller, \
+labeled with colors on the four outside squares\nand numbers on the 8 inside \
+surfaces. Upon opening the fortune teller even further, your super\nmagical personalized \
+fortune is revealed.\nBegin.\n\n'
+
+	userRnd1Clr = raw_input('Choose a color (enter a number 1-4):\n1. RED\n2. GREEN\n3. YELLOW\n4. BLUE\n')
+	if userRnd1Clr == 1 or 2:
+		print 'THIS SHIT STILL WORKING'
