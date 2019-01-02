@@ -15,6 +15,34 @@ labeled with colors on the four outside squares\nand numbers on the 8 inside \
 surfaces. Upon opening the fortune teller even further, your super\nmagical personalized \
 fortune is revealed.\nBegin.\n\n'
 
+	def rnd2NumGp1():
+		userRnd2NumGp1 = raw_input('Now choose a number:\n2	5\n\n1	6\n')
+		print 'Your super magical fortune is.....\n'
+		if userRnd2NumGp1 == 2:
+			print 'No snowflake in an avalanche ever feels responsible.'
+		if userRnd2NumGp1 == 5:
+			print 'If you eat something, and nobody sees it, it has no calories.'
+		if userRnd2NumGp1 == 1:
+			print 'run.'
+		if userRnd2NumGp1 == 6:
+			print 'If you think no one cares if you are alive, try missing a couple car payments.'
+		
+	def rnd2NumGp2():
+		userRnd2NumGp2 = raw_input('Now choose a number:\n3	4\n\n8	7\n')
+		print 'Your super magical fortune is.....\n'
+		if userRnd2NumGp2 == 3:
+			print 'Your pet is planning to eat you.'
+		if userRnd2NumGp2 == 4:
+			print 'Your resemblance to a muppet will prevent the world from taking you seriously.'
+		if userRnd2NumGp2 == 8:
+			print 'A true patriot is the fellow who gets a parking ticket and rejoices that the system works. \
+			Are you a TRUE patriot?'
+		if userRnd2NumGp2 == 7:
+			print 'Your friends secretly agree that your head is the wrong size for your body.'
+		
 	userRnd1Clr = raw_input('Choose a color (enter a number 1-4):\n1. RED\n2. GREEN\n3. YELLOW\n4. BLUE\n')
 	if userRnd1Clr == 1 or 2:
-		print 'THIS SHIT STILL WORKING'
+		rnd2NumGp1()
+	elif userRnd1Clr == 3 or 4:
+		rnd2NumGp2()
+		
